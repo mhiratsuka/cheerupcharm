@@ -1,0 +1,21 @@
+ul{
+	list-style: none;
+}
+
+main#greeeting p{
+	display:inline;
+}
+
+div#displaylogdis{
+	float: right;
+}
+
+div#entrylog img, div#entrylog img{
+	max-width: 40%;
+	height:auto;
+}
+
+div#displaylogdis img{
+	max-width: 20%;
+	height:auto;
+}

@@ -1,0 +1,30 @@
+//
+// Typography
+// --------------------------------------------------
+
+@import "mixins/fontface";
+
+
+// Fonts
+
+@include font-face-mixin('Nexa', '../fonts/nexa', 'nexa_light-webfont');
+@include font-face-mixin('Nexa Bold', '../fonts/nexa', 'nexa_bold-webfont');
+
+
+
+// Font Mixins
+
+@mixin Nexa {
+  font-family: 'Nexa';
+}
+
+@mixin NexaBold {
+  font-family: 'Nexa Bold';
+}
+
+
+
+// Font Usage
+// body {
+//   font-family: 'Open Sans', sans-serif;
+// }

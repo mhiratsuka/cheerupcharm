@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Mypage</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>
+  </head>
+  <body>
+  <main>
+      <div class="main-wrapper">
+          <div class="logopage">
+              <img src="img/logo.png" alt="">
+          </div>
+          <!-- <h1>My page</h1> -->
+
+          <div class="text-box-wrapper">
+            <div id="intro-wrapper">
+              <div id="main-display">
+                <div class="greeting-box">
+                  <h2 id="greeting"></h2>
+                  <h5 id="username"></h5>
+                </div>
+              </div>
+              <div id="option-box">
+                <h3>What do you want to do?</h3>
+              </div>
+              <div id="menu-item" class="row">
+                <div id="post-alt" class="col s4 waves-effect waves-light btn-large">POST SOMETHING</div>
+                <div id="view-alt" class="col s4 waves-effect waves-light btn-large">VIEW POST LOG</div>
+                <div class="col s4 waves-effect waves-light btn-large">RANDOM POST</div>
+              </div>
+              <div id="text-success">
+                <h2>Post is stored</h2>
+              </div>
+            </div> <!-- end of intro wrapper -->
+            
+            <div id="entry-box" class="view-box-container valign-wrapper hidden">
+                <div class="view-box-wrapper">
+                    <h3 class="entry-title" >Write down your day or your feelings....</h3>
+                    
+                    <div id="entrylog">
+                        <form name="entryform" id="entry_form">
+                            <textarea placeholder="Write it here!" name='text' cols="30" rows="5" id="entry_text"></textarea>
+                            <br/>
+                            <input type="file" onchange="loadFile()" id="files" name="files[]">
+                            <img id="entry_pic">
+                            <div id="mood">
+                                <img src="img/happy.png" alt="Happy" onclick="happyEmotion()" id="happy">
+                                <img src="img/normal.png" alt="Normal" onclick="normalEmotion()" id="normal">
+                                <img src="img/sad.png" alt="Sad" onclick="sadEmotion()" id="sad">
+                            </div>
+                            <p>
+                                <button type="button" id="entry_nextb">Next</button>
+                                <button type="reset" id="entry_resetb" value="reset">Reset</button>
+                            </p>
+                        </form>
+                    </div>
+                    <div id="entrylogdis">
+                        <h3>Your display is...</h3>
+                        <h4 id="entry_date"></h4>
+                        <p id="entrylogdis_text"></p>
+                        <img id="entrylogdis_pic">
+                        <img id="entrymood" src="" alt="">
+                        <button type="button" id="entrylogdis_backb">Back</button>
+                        <button type="button" id="entrylogdis-submitb">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="view-title hidden">This is your old writings...</h2>
+            <div id="displaylogbig">
+            </div>
+          </div>
+          <!-- view-box-container end -->
+          <div class="logout-wrapper">
+              <div id="container-logout">
+                  <p id="status-user"></p>
+                  <img id="submit-logout" src="img/logout.png" alt="">
+                  <!-- <button id="submit-logout">Log out</button> -->
+              </div>
+          </div>
+          <div class="main-button">
+              <img id="view-button" src="img/view.png" alt="">
+              <img id="upload-button" src="img/upload.png" alt="">
+              <img id="home-button" src="img/home.png" alt="">
+          </div>
+          <div class="dog-placement">
+            <img src="/img/doggi-move-60.gif" alt="">
+          </div>
+      </div>
+      <!-- end of .main-wrapper -->
+  </main>
+
+
+
+        <div class="displaylog-container">
+          <div id="displaylogdis">
+          </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script defer src="/__/firebase/4.6.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.6.0/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
+    <script>
+      bubbly({
+          colorStart: "#fbb03b",
+          colorStop: "#fbb03b",
+          blur: 1,
+          compose: "source-over",
+          bubbleFunc: () => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+      });           
+    </script>
+    <script src="/js/transition.js"></script>    
+    <script src="/js/mypage.js"></script>
+    <script src="/js/anim-mypage.js"></script>
+</html>

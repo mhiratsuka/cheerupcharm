@@ -10,5 +10,19 @@ This application is for people with depression and reminds them of things can do
 HTML, CSS, Javascript, jQuery, SASS, Firebase, Photoshop, Illustrator
 
 ### Screenshot
+Sign in and Sign up page
+![login](https://user-images.githubusercontent.com/24946941/35020192-ad912f5a-fadf-11e7-80ec-c17e4997dbb3.png)
+
+First page
+![firstpage](https://user-images.githubusercontent.com/24946941/35020217-d3ac54bc-fadf-11e7-891c-afd85149b635.png)
+
+View post log page
+![viewpostlog](https://user-images.githubusercontent.com/24946941/35020244-fd8278de-fadf-11e7-9fb3-c06b6e6fd233.png)
+
+View each log page
+![eachpost](https://user-images.githubusercontent.com/24946941/35020268-19ccf1ae-fae0-11e7-9034-dfa48e06ca83.png)
+
+
+
 
 

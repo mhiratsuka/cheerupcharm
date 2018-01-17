@@ -91,12 +91,12 @@
     // Initialize Firebase
     function initializeApp(){
         var config = {
-          apiKey: "AIzaSyBJmELOXjhvSkQehdIdccq8qWoUsiE2xUo",
-          authDomain: "cherupcharmdemo.firebaseapp.com",
-          databaseURL: "https://cherupcharmdemo.firebaseio.com",
-          projectId: "cherupcharmdemo",
-          storageBucket: "cherupcharmdemo.appspot.com",
-          messagingSenderId: "798253301377"
+          apiKey: "Put yours here",
+          authDomain: "Put yours here",
+          databaseURL: "Put yours here",
+          projectId: "Put yours here",
+          storageBucket: "Put yours here",
+          messagingSenderId: "Put yours here"
           };
         firebase.initializeApp(config);
     }

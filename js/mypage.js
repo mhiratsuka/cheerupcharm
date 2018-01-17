@@ -23,6 +23,7 @@
     let emotionbool = "false";
     let emotionUrl = ["img/happy.png", "img/normal.png", "img/sad.png"];
     let emotionAlt = ["Happy", "Normal", "Sad"];
+
     //display greeting 
     if(usercheck == 0) {
         let rfirst = Math.floor( Math.random() * firstgreeting.length );
@@ -71,14 +72,13 @@ console.log("nouser");
     function loadPastlog(){
         //get a user who is logging in
         let currentUser = firebase.auth().currentUser;
-// 
+
         //get a userid
         let userId = currentUser.uid;  
         let dbRefinput = firebase.database().ref("userinput");
         let querydisp = dbRefinput.orderByChild("userid").equalTo(userId);
-// console.log("querydisp: " + querydisp);
+
           querydisp.on("value", function(snapshot) {
-// console.log(snapshot.numChildren());
               let i = 0;
               snapshot.forEach(function(d){
                   
@@ -141,8 +141,6 @@ console.log("nouser");
         let textnodepbig= document.createTextNode(pbig);
         nodepbig.appendChild(textnodepbig);
 
-        
-
         //picture
         let nodeimgbig = document.createElement("img");
         let cresrcbig = document.createAttribute("src"); 
@@ -183,7 +181,6 @@ console.log("nouser");
         elems.dislogBig.appendChild(nodeeimgbig);
 
         elems.entrylogField.style.display = "none";
-        // elems.displaylogdis.style.display = "none";
     }
 
     function backOriginal(){
@@ -192,7 +189,6 @@ console.log("nouser");
         $(".view-title").addClass("hidden");
         $("#intro-wrapper").removeClass("hidden");
         $("#entry-box").addClass("hidden");
-        // elems.displaylogdis.style.display = "inline";
 
         while(elems.dislogBig.firstChild) {
             elems.dislogBig.removeChild(elems.dislogBig.firstChild);
@@ -263,7 +259,6 @@ console.log("A pic Delete Error...");
 
     function submitEntry(){
         while(elems.displaylogdis.firstChild) {
-// console.log("elems.displaylogdis.firstChild: " + elems.displaylogdis.firstChild);
             elems.displaylogdis.removeChild(elems.displaylogdis.firstChild);
         }
          //get a user who is logging in
@@ -328,8 +323,6 @@ console.log("A pic Delete Error...");
       $("#intro-wrapper").toggleClass("hidden");
       // fadeIn(element);
       submitSuccess(success);
-
-
       
         $("#entry-box").toggleClass("hidden");
         $(".view-title").addClass("hidden");
@@ -338,9 +331,6 @@ console.log("A pic Delete Error...");
               }
 
       $(".entry-title").addClass("hidden");
-      // $("#intro-wrapper").toggleClass("hidden");
-
-      // fadeIn(element);
     }
     
     function backEntry(){
@@ -374,7 +364,6 @@ console.log('Uploaded a blob or file!');
           });
 
           let pathReference = storage.ref(picregistername);
-console.log("pathReference: " + pathReference);
           picname = file.name;
           var latetra = 0;
           var setInter = setInterval(function() {
@@ -428,8 +417,6 @@ console.log("error");
             emotionnum = 2;
             emotionbool = "true";
       }
-
-
             
     //log out 
     elems.logoutButton.addEventListener("click", function() {
@@ -463,8 +450,6 @@ console.log("error");
           "entrypicDis":document.getElementById("entrylogdis_pic"),
           "entryMood":document.getElementById("entrymood"),
 
-
-
           "entrybackButton":document.getElementById("entrylogdis_backb"),
           "entrysubmitButton":document.getElementById("entrylogdis-submitb"),
           "displaylogdis":document.getElementById("displaylogdis"),
@@ -480,12 +465,12 @@ console.log("error");
     // Initialize Firebase
     function initializeApp(){
         var config = {
-          apiKey: "AIzaSyBJmELOXjhvSkQehdIdccq8qWoUsiE2xUo",
-          authDomain: "cherupcharmdemo.firebaseapp.com",
-          databaseURL: "https://cherupcharmdemo.firebaseio.com",
-          projectId: "cherupcharmdemo",
-          storageBucket: "cherupcharmdemo.appspot.com",
-          messagingSenderId: "798253301377"
+          apiKey: "Put yours here",
+          authDomain: "Put yours here",
+          databaseURL: "Put yours here",
+          projectId: "Put yours here",
+          storageBucket: "Put yours here",
+          messagingSenderId: "Put yours here"
           };
         firebase.initializeApp(config);
     }

@@ -19,6 +19,10 @@ First page
 View post log page
 ![viewpostlog](https://user-images.githubusercontent.com/24946941/35020244-fd8278de-fadf-11e7-9fb3-c06b6e6fd233.png)
 
+View each log page
+![eachpost](https://user-images.githubusercontent.com/24946941/35020268-19ccf1ae-fae0-11e7-9034-dfa48e06ca83.png)
+
+
 
 
 

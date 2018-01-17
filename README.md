@@ -16,5 +16,9 @@ Sign in and Sign up page
 First page
 ![firstpage](https://user-images.githubusercontent.com/24946941/35020217-d3ac54bc-fadf-11e7-891c-afd85149b635.png)
 
+View post log page
+![viewpostlog](https://user-images.githubusercontent.com/24946941/35020244-fd8278de-fadf-11e7-9fb3-c06b6e6fd233.png)
+
+
 
 
